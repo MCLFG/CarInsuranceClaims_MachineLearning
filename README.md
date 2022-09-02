@@ -75,3 +75,28 @@ After computing the regression itself, using the values obtained for the p-value
 
 After running the model for the first time, we decided to evaluate the explanatory power of each variable using the obtained p-value for each. We reached to the conclusion that some of these variables, according to this measure, were not statistically significant to explain the target variable. Thus, we proceeded to iteratively eliminate those, analysing the new p-values each time. By the end of all iterations, we decided to drop variables Region, Area, VehBrand and VehGas.
 
+## Logistic Regression
+The dataset was split into train and test using the below function:
+
+A summary statistics was created since it was considered relevant to determine which variables should be dropped from our dataset for this regression.
+
+A RFECV graph was plotted and allowed to conclude that: 
+  - After 4 features, the score increases almost exponetially (corresponds to the VehAge variable).
+  - After 6 features the evolution of the score stabilizes
+
+Using the Learning Curve graph above, one can observe that, as the training instances increases, the gap between the training score and the cross validation score decreases.
+
+Despite the fact that the results obtained by the model in the training set are similar to the ones obtained using the test set, all obtained measures show us that the model predictive power can be considered weak. One possible reason for such results is the fact that the initial dataset is extremely inbalanced (many more observations reporting zero claims than higher than zero).
+
+## Decision Tree
+**The Data Preparation process for the Decision tree followed the same rationale used before, for the linear regression model.**
+
+Simmilarly to the Linear Regression Model, the Learning curve obtained for the Decision Tree model follows the same evolution as training instances increase, i.e, the gap between training score and the cross validation score tends to decrease.
+
+As one can observe from the obtained coeficients, all of them influence positively the number of claims per year. Also, it is possible to observe that some of them are zero, which means that those specific variables (for instance, Region 31 does not explain the number of claims even though Region 91 does.
+
+Similarly to what was observed using the Linear Regression Model, for the Decision Tree model the results obtained in the training set are similar to the ones obtained using the test set. Evethough, onde again, all obtained measures show us that the model predictive power can be considered weak.
+
+Initialy, one could infer that the Decision Tree Model should return more robust results. Although, this was not the case. One possible reason for such is the fact that the initial dataset is extremely inbalanced (many more observations reporting zero claims than higher than zero). As well as that, a higher number of observations, meaning, a larger dataset, could lead to better results.
+
+**Hope you find this project interesting!**
