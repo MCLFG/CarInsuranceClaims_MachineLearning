@@ -6,7 +6,7 @@ The authors of this project were [Carlos Cardoso](https://github.com/CarlosBRDR)
 
 Assuming the role of a consultant, the project consisted on developing a model to forecast how many claims will each policy holder from a car insurer in France have in the following year. The insurance company wants to use this model to improve the policies' premiums (pricing).
 
-Employing the CRISP-DM process model, it was expected to define, describe and explain the model built. Simultaneous, also explain how your model can help the insurance company reaching its objectives.
+The Project objective consists in developing a predictive data analytics solution for a French insurance company, following a CRISP-DM methodology. The developed model seeks to forecast the number of claims each policyholder will have in the following year. By having this information, the insurance company could adjust its pricing model for the next year’s premiums according to the predicted number of claims.
 
 **Business Understaing** 
 phase of the CRIPS-DM framework is somehow compromised since we can’t contact the insurance French company and interact with its associates and workers. It would be interesting to contact a sales team member and observe their daily activity. Besides the top management, it would be also fundamental to contact the IT department to assess the analytics and the data availability. One could also already get some key insights of the company’s data. Given the business objective, the target variable defined in this problem is the number of claims.
